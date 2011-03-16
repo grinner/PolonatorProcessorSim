@@ -1,0 +1,19 @@
+Move test images into a folder in this directory named raw_img.
+
+raw_img/
+    00_00_cy3/
+    00_00_cy5/
+    00_00_fam/
+    00_00_txr/
+    AM1a_A/
+    AM1a_C/
+    AM1a_G/
+    AM1a_T/
+    
+Run these files in this directory with: 
+
+python launcher.py 
+
+
+
+-Nick Conway
