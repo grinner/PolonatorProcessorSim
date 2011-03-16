@@ -32,6 +32,6 @@ $exec_string = "src/compile.pl $working_dir";
 print "EXECUTING:\t$exec_string\n";
 system "$exec_string";
 
-$exec_string = "$working_dir/merge_table $final_position_filename";
+$exec_string = "$working_dir/bin/merge_table $final_position_filename";
 print "EXECUTING:\t$exec_string\n";
 system "$exec_string";

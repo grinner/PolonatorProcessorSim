@@ -38,7 +38,7 @@ if($num_infofiles==2){
     $position_filename = $1;
     print "the 1st reg file name is : $1";
     print "the total files are : $num_infofiles";
-    $exec_string = "$working_dir/make_regfile $position_filename $num_fcs";
+    $exec_string = "$working_dir/bin/make_regfile $position_filename $num_fcs";
     print "EXECUTING:\t$exec_string\n";
     system "$exec_string";
 
@@ -48,7 +48,7 @@ if($num_infofiles==2){
     $position_filename = $1;
     print "the 2nd reg file name is : $1";
     print "the total files are : $num_infofiles";
-    $exec_string = "$working_dir/make_regfile $position_filename $num_fcs";
+    $exec_string = "$working_dir/bin/make_regfile $position_filename $num_fcs";
     print "EXECUTING:\t$exec_string\n";
     system "$exec_string";
 
@@ -61,7 +61,7 @@ if($num_infofiles==2){
 else{
   if($dirlist[0]=~/(.+).info/){
     $position_filename = $1;
-    $exec_string = "$working_dir/make_regfile $position_filename $num_fcs";
+    $exec_string = "$working_dir/bin/make_regfile $position_filename $num_fcs";
     print "EXECUTING:\t$exec_string\n";
     system "$exec_string";
   }

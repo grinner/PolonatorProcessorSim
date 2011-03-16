@@ -24,7 +24,7 @@ if($num_infofiles>2){
 
 else{
   if($dirlist[0]=~/(.+).info/){
-      $exec_string = "./makePrimerFile $dirlist[0] 0 $ARGV[0]";
+      $exec_string = "bin/makePrimerFile $dirlist[0] 0 $ARGV[0]";
       print "EXECUTING:\t$exec_string\n";
       system "$exec_string";
   }

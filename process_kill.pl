@@ -20,7 +20,7 @@
 #    $acq=1;
 #}
 #elsif($ARGV[0] eq "proc"){
-    @findcmd = ("perl ./initialize_processor", "initialize_processor", "perl ./processor", "processor");
+    @findcmd = ("perl bin/initialize_processor", "initialize_processor", "perl bin/processor", "processor");
 #}
 
 
