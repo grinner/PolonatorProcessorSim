@@ -9,7 +9,7 @@ table and does a run of sequencing
 4) Use creatImageDataSet.py to create the input text files by running it in 
 each *.raw image directory to create an entire set of input images.
 
-Get a preset group of test images at:
+Get a pre-indexed group of test images at:
 http://dl.dropbox.com/u/15200497/raw_img.zip
 
 Move test images into a subdirectory in this directory named raw_img.
