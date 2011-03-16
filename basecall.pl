@@ -41,7 +41,7 @@ close PRIMERTHRESH;
 print READINFO "\nExecuting basecaller as follows:\n";
 
 # Use this one to output tetrahedron info
-$basecallercmd = "./basecaller notruncmdln 1 1 $ARGV[0] $infofilename $ARGV[1] $ARGV[2] $beadfiles";
+$basecallercmd = "bin/basecaller notruncmdln 1 1 $ARGV[0] $infofilename $ARGV[1] $ARGV[2] $beadfiles";
 
 # Use this one to not output tetrahedron info
 #$basecallercmd = "./basecaller notruncmdln 1 0 $ARGV[0] $infofilename $ARGV[1] $ARGV[2] $beadfiles";

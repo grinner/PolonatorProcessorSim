@@ -60,7 +60,7 @@ if($num_infofiles>0){
 
 $ACQUISITION_NAME = "00_fam";
 
-$exec_string = "$working_dir/initialize_processor $ACQUISITION_NAME";
+$exec_string = "$working_dir/bin/initialize_processor $ACQUISITION_NAME";
 print "EXECUTING:\t$exec_string\n";
 $num_fcs = system("$exec_string") >> 8; #initialize_processor.c returns the number of flowcells
 print "initialize_processor returned $num_fcs flowcells for this run\n";
@@ -71,7 +71,7 @@ system "$exec_string";
 
 $ACQUISITION_NAME = "00_cy3";
 
-$exec_string = "$working_dir/initialize_processor $ACQUISITION_NAME";
+$exec_string = "$working_dir/bin/initialize_processor $ACQUISITION_NAME";
 print "EXECUTING:\t$exec_string\n";
 $num_fcs = system("$exec_string") >> 8; #initialize_processor.c returns the number of flowcells
 print "initialize_processor returned $num_fcs flowcells for this run\n";
@@ -82,7 +82,7 @@ system "$exec_string";
 
 $ACQUISITION_NAME = "00_txr";
 
-$exec_string = "$working_dir/initialize_processor $ACQUISITION_NAME";
+$exec_string = "$working_dir/bin/initialize_processor $ACQUISITION_NAME";
 print "EXECUTING:\t$exec_string\n";
 $num_fcs = system("$exec_string") >> 8; #initialize_processor.c returns the number of flowcells
 print "initialize_processor returned $num_fcs flowcells for this run\n";
@@ -93,7 +93,7 @@ system "$exec_string";
 
 $ACQUISITION_NAME = "00_cy5";
 
-$exec_string = "$working_dir/initialize_processor $ACQUISITION_NAME";
+$exec_string = "$working_dir/bin/initialize_processor $ACQUISITION_NAME";
 print "EXECUTING:\t$exec_string\n";
 $num_fcs = system("$exec_string") >> 8; #initialize_processor.c returns the number of flowcells
 print "initialize_processor returned $num_fcs flowcells for this run\n";
@@ -102,7 +102,7 @@ $exec_string = "mv autoexp_pos autoexp_pos_cy5";
 print "EXECUTING:\t$exec_string\n";
 system "$exec_string";
 
-$exec_string = "$working_dir/merge_table $final_position_filename";
+$exec_string = "$working_dir/bin/merge_table $final_position_filename";
 print "EXECUTING:\t$exec_string\n";
 system "$exec_string";
 
@@ -134,7 +134,7 @@ if($num_infofiles==2){
     $position_filename = $1;
     print "the 2nd reg file name is : $1";
     print "the total files are : $num_infofiles";
-    $exec_string = "$working_dir/make_regfile $position_filename $num_fcs";
+    $exec_string = "$working_dir/bin/make_regfile $position_filename $num_fcs";
     print "EXECUTING:\t$exec_string\n";
     system "$exec_string";
 
@@ -147,7 +147,7 @@ if($num_infofiles==2){
 else{
   if($dirlist[0]=~/(.+).info/){
     $position_filename = $1;
-    $exec_string = "$working_dir/make_regfile $position_filename $num_fcs";
+    $exec_string = "$working_dir/bin/make_regfile $position_filename $num_fcs";
     print "EXECUTING:\t$exec_string\n";
     system "$exec_string";
   }

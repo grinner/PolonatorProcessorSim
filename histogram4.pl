@@ -21,7 +21,7 @@ if($num_infofiles>2){
 
 else{
   if($dirlist[0]=~/(.+).info/){
-      $exec_string = "./histogram4 $dirlist[0] beads/$ARGV[1]_" . $ARGV[0] . " $ARGV[1] $ARGV[2] $ARGV[3]";
+      $exec_string = "bin/histogram4 $dirlist[0] beads/$ARGV[1]_" . $ARGV[0] . " $ARGV[1] $ARGV[2] $ARGV[3]";
       print "EXECUTING:\t$exec_string\n";
       system "$exec_string";
   }

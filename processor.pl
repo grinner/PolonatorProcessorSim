@@ -46,22 +46,22 @@ if($num_infofiles<3){
     close NUM_FCS;
 
     $ACQUISITION_NAME = "AM1a_G";
-    $exec_string = "$current_dir/processor $ACQUISITION_NAME $position_filename $num_fcs";
+    $exec_string = "$current_dir/bin/processor $ACQUISITION_NAME $position_filename $num_fcs";
     print "EXECUTING:\t$exec_string\n";
     system "$exec_string";
 
     $ACQUISITION_NAME = "AM1a_A";
-    $exec_string = "$current_dir/processor $ACQUISITION_NAME $position_filename $num_fcs";
+    $exec_string = "$current_dir/bin/processor $ACQUISITION_NAME $position_filename $num_fcs";
     print "EXECUTING:\t$exec_string\n";
     system "$exec_string";
 
     $ACQUISITION_NAME = "AM1a_C";
-    $exec_string = "$current_dir/processor $ACQUISITION_NAME $position_filename $num_fcs";
+    $exec_string = "$current_dir/bin/processor $ACQUISITION_NAME $position_filename $num_fcs";
     print "EXECUTING:\t$exec_string\n";
     system "$exec_string";
 
     $ACQUISITION_NAME = "AM1a_T";
-    $exec_string = "$current_dir/processor $ACQUISITION_NAME $position_filename $num_fcs";
+    $exec_string = "$current_dir/bin/processor $ACQUISITION_NAME $position_filename $num_fcs";
     print "EXECUTING:\t$exec_string\n";
     system "$exec_string";
 
