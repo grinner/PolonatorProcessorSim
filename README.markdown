@@ -18,7 +18,7 @@ each `*.raw` image directory to create an entire set of input images.
 
 Get a pre-indexed group of test images at:
 Directory formats are:
-    `AM[N][n]_X`
+    `AM[N][n]_[X]`
 
 where 
 
